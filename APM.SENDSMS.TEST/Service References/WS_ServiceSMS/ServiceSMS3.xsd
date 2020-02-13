@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.apmterminals.com" elementFormDefault="qualified" targetNamespace="http://www.apmterminals.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:53157/ServiceSMS.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/APM.SENDSMS.SERVICE.DTO" />
+  <xs:complexType name="ServiceSMSRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Aplicacion" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/APM.SENDSMS.SERVICE.DTO" minOccurs="0" name="ListaEnvio" nillable="true" type="q1:ArrayOfContactoDTO" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceSMSRequest" nillable="true" type="tns:ServiceSMSRequest" />
+  <xs:complexType name="ServiceSMSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceSMSResponse" nillable="true" type="tns:ServiceSMSResponse" />
+</xs:schema>

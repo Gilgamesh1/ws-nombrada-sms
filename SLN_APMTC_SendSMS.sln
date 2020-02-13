@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{511AED6F-490E-481A-A099-213AD756630C}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		SLN_APMTC_SendSMS.vsmdi = SLN_APMTC_SendSMS.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APM.SENDSMS.HOST", "APM.SENDSMS.HOST\APM.SENDSMS.HOST.csproj", "{BFF7DCE1-DD28-40EA-B3F3-65A0CDFACA42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APM.SENDSMS.SERVICE", "APM.SENDSMS.SERVICE\APM.SENDSMS.SERVICE.csproj", "{0C753B0C-DEE9-45B2-8207-85AE96AE2978}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APM.COM.UTIL", "APM.COM.UTIL\APM.COM.UTIL.csproj", "{037ED7AB-319D-4783-81CF-E79E4E5F44FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APM.COM.DALC", "APM.COM.DALC\APM.COM.DALC.csproj", "{D4C00846-7C58-48DC-9158-A63B7208068F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APM.SENDSMS.CLI", "APM.SENDSMS.CLI\APM.SENDSMS.CLI.csproj", "{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFF7DCE1-DD28-40EA-B3F3-65A0CDFACA42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF7DCE1-DD28-40EA-B3F3-65A0CDFACA42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF7DCE1-DD28-40EA-B3F3-65A0CDFACA42}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BFF7DCE1-DD28-40EA-B3F3-65A0CDFACA42}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BFF7DCE1-DD28-40EA-B3F3-65A0CDFACA42}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BFF7DCE1-DD28-40EA-B3F3-65A0CDFACA42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF7DCE1-DD28-40EA-B3F3-65A0CDFACA42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF7DCE1-DD28-40EA-B3F3-65A0CDFACA42}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BFF7DCE1-DD28-40EA-B3F3-65A0CDFACA42}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BFF7DCE1-DD28-40EA-B3F3-65A0CDFACA42}.Release|x86.ActiveCfg = Release|Any CPU
+		{0C753B0C-DEE9-45B2-8207-85AE96AE2978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C753B0C-DEE9-45B2-8207-85AE96AE2978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C753B0C-DEE9-45B2-8207-85AE96AE2978}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0C753B0C-DEE9-45B2-8207-85AE96AE2978}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0C753B0C-DEE9-45B2-8207-85AE96AE2978}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0C753B0C-DEE9-45B2-8207-85AE96AE2978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C753B0C-DEE9-45B2-8207-85AE96AE2978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C753B0C-DEE9-45B2-8207-85AE96AE2978}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0C753B0C-DEE9-45B2-8207-85AE96AE2978}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0C753B0C-DEE9-45B2-8207-85AE96AE2978}.Release|x86.ActiveCfg = Release|Any CPU
+		{037ED7AB-319D-4783-81CF-E79E4E5F44FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037ED7AB-319D-4783-81CF-E79E4E5F44FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037ED7AB-319D-4783-81CF-E79E4E5F44FE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{037ED7AB-319D-4783-81CF-E79E4E5F44FE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{037ED7AB-319D-4783-81CF-E79E4E5F44FE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{037ED7AB-319D-4783-81CF-E79E4E5F44FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037ED7AB-319D-4783-81CF-E79E4E5F44FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{037ED7AB-319D-4783-81CF-E79E4E5F44FE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{037ED7AB-319D-4783-81CF-E79E4E5F44FE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{037ED7AB-319D-4783-81CF-E79E4E5F44FE}.Release|x86.ActiveCfg = Release|Any CPU
+		{D4C00846-7C58-48DC-9158-A63B7208068F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C00846-7C58-48DC-9158-A63B7208068F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C00846-7C58-48DC-9158-A63B7208068F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D4C00846-7C58-48DC-9158-A63B7208068F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D4C00846-7C58-48DC-9158-A63B7208068F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D4C00846-7C58-48DC-9158-A63B7208068F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C00846-7C58-48DC-9158-A63B7208068F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C00846-7C58-48DC-9158-A63B7208068F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D4C00846-7C58-48DC-9158-A63B7208068F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D4C00846-7C58-48DC-9158-A63B7208068F}.Release|x86.ActiveCfg = Release|Any CPU
+		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Debug|x86.ActiveCfg = Debug|x86
+		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Debug|x86.Build.0 = Debug|x86
+		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Release|Any CPU.ActiveCfg = Release|x86
+		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Release|Mixed Platforms.Build.0 = Release|x86
+		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Release|x86.ActiveCfg = Release|x86
+		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE9BCE00-CBF4-4EFD-85BF-3667B33F0F7E}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SLN_APMTC_SendSMS.vsmdi
+	EndGlobalSection
+EndGlobal

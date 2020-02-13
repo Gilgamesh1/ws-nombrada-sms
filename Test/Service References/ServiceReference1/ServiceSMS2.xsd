@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/APM.SENDSMS.SERVICE.DTO" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/APM.SENDSMS.SERVICE.DTO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfContactoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContactoDTO" nillable="true" type="tns:ContactoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContactoDTO" nillable="true" type="tns:ArrayOfContactoDTO" />
+  <xs:complexType name="ContactoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Celular" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodTrabajador" type="xs:int" />
+      <xs:element minOccurs="0" name="FechaNombrada" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreTrabajador" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NroBoleta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Turno" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContactoDTO" nillable="true" type="tns:ContactoDTO" />
+</xs:schema>

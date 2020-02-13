@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5dddf9fd-950a-479c-affb-4fa20b5ea932" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53157/ServiceSMS.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceSMS.xsd" MetadataType="Schema" ID="daa92b66-0be1-4b02-9f15-651e31a4253d" SourceId="1" SourceUrl="http://localhost:53157/ServiceSMS.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceSMS1.xsd" MetadataType="Schema" ID="e7903e18-e524-499a-b6af-0544841fa6e1" SourceId="1" SourceUrl="http://localhost:53157/ServiceSMS.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceSMS2.xsd" MetadataType="Schema" ID="385ac553-6d92-4f74-a7de-6d1974f2ef43" SourceId="1" SourceUrl="http://localhost:53157/ServiceSMS.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServiceSMS3.xsd" MetadataType="Schema" ID="957f4eeb-b284-46ee-aa00-7af9a8a76d74" SourceId="1" SourceUrl="http://localhost:53157/ServiceSMS.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceSMS.disco" MetadataType="Disco" ID="836c05ec-badc-476a-9e27-df12db4c2710" SourceId="1" SourceUrl="http://localhost:53157/ServiceSMS.svc?disco" />
+    <MetadataFile FileName="ServiceSMS.wsdl" MetadataType="Wsdl" ID="3c5ce9ec-ed17-4708-9ace-813900ce8cf0" SourceId="1" SourceUrl="http://localhost:53157/ServiceSMS.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
