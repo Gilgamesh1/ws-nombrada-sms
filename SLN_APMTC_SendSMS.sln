@@ -18,8 +18,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APM.COM.UTIL", "APM.COM.UTI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APM.COM.DALC", "APM.COM.DALC\APM.COM.DALC.csproj", "{D4C00846-7C58-48DC-9158-A63B7208068F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APM.SENDSMS.CLI", "APM.SENDSMS.CLI\APM.SENDSMS.CLI.csproj", "{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,16 +68,6 @@ Global
 		{D4C00846-7C58-48DC-9158-A63B7208068F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{D4C00846-7C58-48DC-9158-A63B7208068F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{D4C00846-7C58-48DC-9158-A63B7208068F}.Release|x86.ActiveCfg = Release|Any CPU
-		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Debug|x86.ActiveCfg = Debug|x86
-		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Debug|x86.Build.0 = Debug|x86
-		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Release|Any CPU.ActiveCfg = Release|x86
-		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Release|Mixed Platforms.Build.0 = Release|x86
-		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Release|x86.ActiveCfg = Release|x86
-		{CF33CA24-D6F4-4F69-B47D-F444B762DE7C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

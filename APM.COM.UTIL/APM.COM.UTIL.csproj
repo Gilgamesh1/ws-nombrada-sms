@@ -59,7 +59,6 @@
     <Compile Include="Enum\MensajeError.cs" />
     <Compile Include="Request.cs" />
     <Compile Include="Response.cs" />
-    <Compile Include="Enum\TypeLog.cs" />
     <Compile Include="Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

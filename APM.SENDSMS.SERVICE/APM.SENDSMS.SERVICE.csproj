@@ -65,7 +65,6 @@
     <Compile Include="Implementacion\SendingMethods\CMovil.cs" />
     <Compile Include="Implementacion\SendingMethods\Convergia.cs" />
     <Compile Include="Implementacion\SendingMethods\ISend.cs" />
-    <Compile Include="Implementacion\SendingMethods\Masivo.cs" />
     <Compile Include="Implementacion\ServiceSMS.cs" />
     <Compile Include="Mensaje\CMovilSMS.cs" />
     <Compile Include="Mensaje\ConvergiaSMS.cs" />

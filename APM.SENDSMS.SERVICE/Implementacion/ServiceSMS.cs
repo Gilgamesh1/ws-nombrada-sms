@@ -114,103 +114,11 @@ namespace APM.SENDSMS.SERVICE.Implementacion
             return SMSSimpleBase(contacto, mensaje);
         }
 
-        private Response EnvioSMSBatch(ServiceSMSRequest request)
-        {
-            int j = 0;
-            string dataContactos = string.Empty;
-
-            DataTable tabla = new DataTable();
-            tabla.Columns.Add("Aplicacion");
-            tabla.Columns.Add("UsuarioEnvio");
-            tabla.Columns.Add("NroBoleta");
-            tabla.Columns.Add("FechaNombrada");
-            tabla.Columns.Add("Turno");
-            tabla.Columns.Add("CodTrabajador");
-            tabla.Columns.Add("NombreTrabajador");
-            tabla.Columns.Add("Celular");
-            tabla.Columns.Add("Mensaje");
-
-            foreach (var item in request.ListaEnvio)
-            {
-                DataRow fila = tabla.NewRow();
-                fila["Aplicacion"] = request.Aplicacion;
-                fila["UsuarioEnvio"] = request.Usuario;
-                fila["NroBoleta"] = item.NroBoleta;
-                fila["FechaNombrada"] = item.FechaNombrada;
-                fila["Turno"] = item.Turno;
-                fila["CodTrabajador"] = item.CodTrabajador;
-                fila["NombreTrabajador"] = item.NombreTrabajador;
-                fila["Celular"] = item.Celular;
-                fila["Mensaje"] = item.Mensaje;
-                tabla.Rows.Add(fila);
-                dataContactos = String.Concat(dataContactos, String.Format("{0},{1},{2}\n", j, item.Celular, item.Mensaje));
-                j++;
-            }
-
-            Response responseSMS = SMSBatchBase(dataContactos);
-            responseSMS._Xml =  Util.getXMLData(tabla);
-            responseSMS._RowAffected = j;
-            return responseSMS;
-        }
-
-        /* Envio Batch SMS*/
-        private Response SMSBatchBase(string dataContactos)
-        {
-            Response response = null;
-            try
-            {
-                string userSMS = Util.GetAppSettings(ParametroSMS.UserSMS);
-                string passSMS = Util.GetAppSettings(ParametroSMS.PassSMS);
-                string curl = Util.GetAppSettings(ParametroSMS.urlMasivo);
-                string method = Util.GetAppSettings(ParametroSMS.Method);
-                string contentType = Util.GetAppSettings(ParametroSMS.ContentType);
-                string proxy = Util.GetAppSettings(ParametroSMS.Proxy);
-                string data = String.Format("usuario={0}&clave={1}&bloque=%0d{2}", userSMS, passSMS, dataContactos);
-                string datafinal = Uri.EscapeUriString(data);
-
-                WebRequest url = WebRequest.Create(curl);
-                url.Method = method;
-                if (proxy != "")
-                {
-                    WebProxy prox = new WebProxy() { Address = new Uri(proxy) };
-                    url.Proxy = prox;
-                }
-                byte[] byteArray = Encoding.UTF8.GetBytes(datafinal);
-                url.ContentType = contentType;
-                url.ContentLength = byteArray.Length;
-                Stream dataStream = url.GetRequestStream();
-                dataStream.Write(byteArray, 0, byteArray.Length);
-                dataStream.Close();
-
-                Stream objStream = url.GetResponse().GetResponseStream();
-                StreamReader objReader = new StreamReader(objStream);
-                string responseWebSMS = objReader.ReadLine();
-                switch (responseWebSMS)
-                {
-                    case "OK": Console.WriteLine("Enviado");
-                        response = new Response() { _Codigo = CodigoError.OK, _Mensaje = MensajeError.ERROR_OK };
-                        break;
-                    default:
-                        response = new Response() { _Codigo = CodigoError.ERROR, _Mensaje = responseWebSMS };
-                        break;
-                }
-            }
-            catch (Exception ex)
-            {
-                response = new Response() { _Codigo = CodigoError.ERROR, _Mensaje = ex.Message };
-            }
-
-            return response;
-        }
-
         /* Envio Simple SMS*/
         private Response SMSSimpleBase(string numero, string texto)
         {
             ISend sendOver;
             switch( Util.GetAppSettings("sendOver") ){
-                case "MASIVO":
-                    sendOver = new Masivo();
-                    break;
                 case "CONVERGIA":
                     sendOver = new Convergia();
                     break;
@@ -218,7 +126,7 @@ namespace APM.SENDSMS.SERVICE.Implementacion
                     sendOver = new CMovil();
                     break;
                 default:
-                    sendOver = new Masivo();
+                    sendOver = new CMovil();
                     break;
             }
             return sendOver.SendSMS(numero, texto);
