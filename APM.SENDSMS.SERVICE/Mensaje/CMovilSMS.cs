@@ -58,7 +58,7 @@ namespace APM.SENDSMS.SERVICE.Mensaje
         public class Response
         {
             public int code { get; set; }
-            public int mailingId { get; set; }
+            public long mailingId { get; set; }
             public string result { get; set; }
             public string hint { get; set; }
             public string message { get; set; }
